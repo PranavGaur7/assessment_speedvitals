@@ -8,6 +8,7 @@
 /* } */
 @theme{
     --breakpoint-br: 840px;
+    --breakpoint-sm: 640px;
     --breakpoint-xs: 421px;
     --color-dark-primary:#1a1a1a;
     --color-dark-icons:#ff7f50;
