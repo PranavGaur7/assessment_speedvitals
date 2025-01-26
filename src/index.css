@@ -1,0 +1,23 @@
+@import "tailwindcss";
+/* @theme { */
+    /* --primary-color: #1a1a1a; */
+    /* --secondary-color: #3c3ca4; */
+    /* --tertiary-color: #7E7EFF; */
+    /* --icons-color: #ffbf47; */
+    /* --color-primary: #3c3ca4; */
+/* } */
+@theme{
+    --breakpoint-br: 840px;
+    --breakpoint-xs: 421px;
+    --color-dark-primary:#1a1a1a;
+    --color-dark-icons:#ff7f50;
+    
+}
+/* .light{
+    --color-primary: #3c3ca4;
+}
+.dark{
+    --color-primary: #1a1a1a;
+} */
+/* @custom-variant dark (&:where(.dark, .dark *)); */
+
