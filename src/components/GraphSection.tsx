@@ -94,10 +94,10 @@ const GraphSection: React.FC<props> = ({ device, setDevice ,isDarkMode, setIsDar
     }, [, device])
     return (
         <div className={`flex flex-col items-center ${isDarkMode?"bg-dark-primary":""}`}>
-            <div className={`mt-32  font-bold text-2xl sm:text-4xl br:text-5xl ${isDarkMode?"text-white":""}`}>SpeedVitals Internship Assessment</div>
+            <div className={`mt-32  font-bold text-xl sm:text-4xl br:text-5xl ${isDarkMode?"text-white":""}`}>SpeedVitals Internship Assessment</div>
             <div className='mt-11'>
                 <span className={`${isDarkMode?"text-dark-icons":"text-gray-600"} me-8 text-base xs:text-lg sm:text-xl br:text-2xl font-bold `}>Choose a Device</span>
-                <select id="countries" className=" outline-none bg-zinc-200  py-2 px-4  mt-5  text-black border border-gray-400 shadow rounded-lg text-base br:text-lg "
+                <select  id="countries" className=" outline-none bg-zinc-200  py-2 px-4  mt-5  text-black border border-gray-400 shadow rounded-lg text-base br:text-lg "
                     onChange={(e) => {
                         setDevice(e.target.value)
                     }}
@@ -109,17 +109,17 @@ const GraphSection: React.FC<props> = ({ device, setDevice ,isDarkMode, setIsDar
             {
                 !loading && datacls && datalcp &&
                 <div className='flex items-center justify-evenly w-full flex-wrap mt-10 z-10'>
-                    <div className={`${isDarkMode?"border-dark-icons":""} br:min-w-96 w-full h-96 border-2  br:w-[45%] mx-5 br:mx-2 my-4`}>
+                    <div className={`${isDarkMode?"border-dark-icons":""} br:min-w-96 w-full h-auto border-2  br:w-[45%] mx-5 br:mx-2 my-4`}>
                         <ReactECharts option={option(datacls, false)}
                             style={{
-                                height: '380px',
+                                height: '400px',
                             }}
                         />
                     </div>
-                    <div className={`${isDarkMode?"border-dark-icons":""} br:min-w-96 w-full h-96 border-2  br:w-[45%] mx-5 br:mx-2 my-4`}>
+                    <div className={`${isDarkMode?"border-dark-icons":""} br:min-w-96 w-full h-auto border-2  br:w-[45%] mx-5 br:mx-2 my-4`}>
                         <ReactECharts option={option(datalcp, true)}
                             style={{
-                                height: '380px',
+                                height: '400px',
                             }}
                         />
                     </div>

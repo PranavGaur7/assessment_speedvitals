@@ -11,11 +11,11 @@ const Home = () => {
     return (
         <div className={ `flex flex-col min-h-screen h-full justify-between ${isDarkMode?"bg-dark-primary dark":""} ${show?"overflow-clip":""} `}>
             <div className='w-full'>
-                <div className='w-full h-auto shadow-lg'>
+                <div className='z-50 w-full h-auto shadow-lg fixed'>
                     <Navbar device={device} isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} show={show} setShow={setShow} />
                     <NavList isDarkMode={isDarkMode} show={show} />
                 </div>
-                <div className='mb-48'>
+                <div className='mb-64 mt-16'>
                     <GraphSection device={device} setDevice={setDevice} isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
                 </div>
             </div>
